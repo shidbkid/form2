@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Idea Lab</title>
+	
+    <style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+            
+			max-width: 75%;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+        label{
+            font-size:25px;
+        }
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+        hr {
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+        }
+       
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+            transform: scale(120%);
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+		#ten-countdown {
+			/* text-align: center; */
+			border: 5px solid #004853;
+			display:inline;
+			padding: 5px;
+			color: #004853;
+			font-family: Verdana, sans-serif, Arial;
+			font-size: 40px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+      .submit{
+        background-color: #fff;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+      }
+	
+      button:hover{
+          background-color: yellow;
+      }
+	</style>
+</head>
+<body>
+    <h1>IDEA LAB(E-CELL)RECRUITMENT DRIVE TEST</h1>
+    <div id="ten-countdown"></div>
+    
+	<form id="myForm">
+    <div class="form-control">
+		<label class="control-label">Name</label>
+		<input name="name" required/>
+    </div>
+		<br/>
+    <div class="form-control">    
+        <label>Email</label>
+		<input name="email" required/>
+    </div>    
+		<br/>
+    <div class="form-control">     
+		<label>Age</label>
+		<input name="age" required/>
+    </div>    
+	<br/>
+
+    <div class="form-control">
+        <label for="branch" id="label-branch">
+            Branch
+        </label>
+        
+        <!-- Dropdown options -->
+        <select name="branch" id="branch" required>
+            <option value="CS">CS</option>
+            <option value="CSE">CSE</option>
+            <option value="CE">CE</option>
+            <option value="CS-IT">CS-IT</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="EN">EN</option>
+            <option value="ME">ME</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <hr><br>
+    <div class="form-control">
+        <label>
+            Are you part of any other society of AKGEC? 
+        </label>
+    
+        <!-- Input Type Radio Button -->
+        <label for="society-yes">
+            <input type="radio"
+                id="society-yes"
+                name="society" required/>Yes
+        </label>
+        <label for="society-no">
+            <input type="radio"
+                id="society-no"
+                name="society" required/>No
+        </label>
+        
+    </div>
+    <hr><br>
+    
+    <div class="form-control">
+        <label for="comment">
+            If yes then mention which society of AKGEC you are associated with.
+        </label>
+    
+        <!-- multi-line text input control -->
+        <textarea name="society_name" id="comment"
+            placeholder="Enter your society's name">
+        </textarea>
+    </div>
+    <hr><br>
+    
+    <div class="form-control">
+        <label>Check if you possess one or more of the following skills/ you are interested in any of them
+            <small>(Check all that apply)</small>
+        </label>
+        <br>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="checkbox"
+                name="inp1">Web development</label>
+                <br>
+        <label for="inp-2">
+            <input type="checkbox"
+                name="inp2">Graphic Design ( proficient in Photoshop or Illustration or any other relevant software) </label>
+                <br>
+        <label for="inp-3">
+            <input type="checkbox"
+                name="inp3">Content Writing</label>
+                <br>
+        <label for="inp-4">
+            <input type="checkbox"
+                name="inp4">Public speaking</label>
+                <br>
+        <label for="inp-5">
+            <input type="checkbox"
+                name="inp5">Video editing</label>
+                <br>
+        <label for="inp-6">
+            <input type="checkbox"
+                name="inp6">Digital Marketing</label>
+                <br>
+        <label for="inp-7">
+            <input type="checkbox"
+                name="inp7">Photography</label>
+                <br>
+        <label for="inp-8">
+            <input type="checkbox"
+                name="inp8">Promotions(Events)</label>
+                <br>
+        <label for="inp-9">
+            <input type="checkbox"
+                name="inp9">Other:</label>
+                <br>
+        <label for="inp-10">
+            <input type="text"
+            id="other"
+            placeholder="Please Specify" name="inp10" />
+            </label>
+            
+            <br> <hr> 
+    </div>
+   
+    
+    
+    
+    <div class="form-control">
+        <label>Which software, programming languages or skills would you call yourself familiar or
+            proficient or wellversed in? (If none or it is not mentioned here, choose Other and mention
+             it there)
+            <small>(Check all that apply)</small>
+        </label>
+        <br>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="checkbox"
+                   name="C/C++">C/C++</label>
+
+                   <br>
+        <label for="inp-2">
+            <input type="checkbox"
+                   name="Java">Java</label>
+                   <br>
+        <label for="inp-3">
+            <input type="checkbox"
+                   name="Python">Python</label>
+                   <br>
+        <label for="inp-4">
+            <input type="checkbox"
+                   name="HTML">HTML</label>
+                   <br>
+        <label for="inp-5">
+            <input type="checkbox"
+                   name="Adobe_PhotoShop">Adobe Photoshop</label>
+                   <br>
+        <label for="inp-6">
+            <input type="checkbox"
+                   name="Adobe_Lightroom">Adobe Lightroom</label>
+                   <br>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="Adobe_Premiere">Adobe Premiere</label>
+                   <br>
+        <label for="inp-8">
+            <input type="checkbox"
+                   name="Sony_Vegas">Sony Vegas</label>
+                   <br>
+        <label for="inp-9">
+            <input type="checkbox"
+                   name="Final_Cut_Pro">Final Cut Pro</label>
+                   <br>
+        <label for="inp-10">
+            <input type="checkbox"
+                   name="MS_Office">MS Office</label>
+                   <br>
+        <label for="inp-11">
+            <input type="checkbox" name="Corel_Draw">Corel Draw</label>
+                   <br>
+        <label for="inp-12">
+            <input type="checkbox" name="Adobe_Illustrator">Adobe Illustrator</label>
+                   <br>
+        <label for="inp-13">
+            <input type="checkbox" name="Oracle_forms_and_DB">Oracle forms and DB</label>
+                   <br>
+        <label for="inp-14">
+            <input type="checkbox" name="Django">Django</label>
+            <br>
+        <label for="inp-15">
+            <input type="checkbox" name="Aftereffects">Aftereffects</label>
+            <br>
+        <label for="inp-16">
+            <input type="checkbox" name="inp">Other:</label>
+            <br>
+        <label for="inp-17">
+            <input type="text" id="other"placeholder="Please Specify" name="other_skills" /></label>
+            <br> <hr>
+    </div>
+    
+    
+    
+    <div class="form-control">
+        <label for="about_yourself">
+            Tell us something about yourself?
+        </label>
+    
+        <!-- multi-line text input control -->
+        <textarea name="about_yourself" id="about_yourself"
+            placeholder="Your Answers....">
+        </textarea>
+    </div>
+    <hr><br>
+    
+
+    <div class="form-control">
+        <label for="Entrepreneurship_mean">
+           What does Entrepreneurship mean to you?(Max 50 words)
+        </label>
+    
+        <!-- multi-line text input control -->
+        <textarea name="Entrepreneurship_mean" id="Entrepreneurship_mean"
+            placeholder="Your Answers....">
+        </textarea>
+    </div>
+    <hr><br>
+    
+    <div class="form-control">
+        <label for="we_choose_you">
+           Why should we choose you? (Max 100 words)</label>
+    
+        <!-- multi-line text input control -->
+        <textarea name="why_choose_you" id="we_choose_you"
+            placeholder="Your Answers....">
+        </textarea>
+    </div>
+    <hr><br>
+    
+    
+    
+    <div class="form-control">
+        <label for="comment">
+            Any thing you want to specify?
+        </label>
+    
+        <!-- multi-line text input control -->
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+    </div>
+            
+	</form>
+    
+    <input type="button" value="Submit" id="submit" onclick="SubForm();" >
+	
+</body>
+
+
+</html>
+
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+<script>
+        
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/18584/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+            }    
+		
+        
+</script>
+<script>
+	
+	function countdown( elementName, minutes, seconds ){
+		var element, endTime, hours, mins, msLeft, time;
+	
+		function twoDigits( n )
+		{
+			return (n <= 9 ? "0" + n : n);
+		}
+	
+		function updateTimer()
+		{
+			msLeft = endTime - (+new Date);
+			if ( msLeft < 1000 ) {
+		    document.getElementById('submit').click();
+            element.innerHTML = "Time is up!";
+			} else {
+				time = new Date( msLeft );
+				hours = time.getUTCHours();
+				mins = time.getUTCMinutes();
+				element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+				setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+			}
+		}
+
+	
+		element = document.getElementById( elementName );
+		endTime = (+new Date) + 1000* (60*minutes + seconds) + 500;
+		updateTimer();
+
+		
+
+
+        
+	}
+
+    
+	
+	countdown( "ten-countdown", 10, 0 );
+
+	
+	</script>
